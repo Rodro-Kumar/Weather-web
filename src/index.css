@@ -41,4 +41,28 @@
   .weatherBg {
     background-image: url(/src/assets/weather.jpg);
   }
+
+  .HazeBg {
+    background-image: url(/src/assets/hazeBg.jpg);
+  }
+
+  .cloudBg {
+    background-image: url(/src/assets/cloudy.webp);
+  }
+
+  .windBg {
+    background-image: url(/src/assets/windBg.jpg);
+  }
+
+  .rainBg {
+    background-image: url(/src/assets/rainBg.jpg);
+  }
+
+  .snowBg {
+    background-image: url(/src/assets/snowBg.jpg);
+  }
+
+  .thenderStromeBg {
+    background-image: url(/src/assets/stromBg.jpg);
+  }
 }
