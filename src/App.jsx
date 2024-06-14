@@ -69,7 +69,7 @@ function App() {
               : weather == "Drizzle"
               ? "bg-[url('src/assets/cloudy.webp')]"
               : "ClearBg"
-            : "bg-[url('src/assets/weather.jpg')]"
+            : "weatherBg"
         } w-full h-screen bg-cover bg-center`}
       >
         <div className="flex flex-col sm:flex-row basis-full">
