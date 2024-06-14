@@ -13,7 +13,7 @@ import { FaTemperatureLow, FaTemperatureHigh } from "react-icons/fa";
 
 function App() {
   const [inputValue, setinputValue] = useState("");
-  const [weather, setweather] = useState("");
+  const [weather, setweather] = useState({});
   const [weatherDetails, setweatherDetails] = useState({});
   const [weatherJosn, setweatherJosn] = useState({});
   const [weatherJosnMain, setweatherJosnMain] = useState({});
@@ -43,33 +43,11 @@ function App() {
       });
   };
 
-  console.log(weatherJosn);
-
   return (
     <>
       <div
         className={`${
-          weather
-            ? weather == "Haze"
-              ? "HazeBg"
-              : weather == "Clouds"
-              ? "cloudBg"
-              : weather == "Clear"
-              ? "ClearBg"
-              : weather == "Rain"
-              ? "rainBg"
-              : weather == "Wind"
-              ? "windBg"
-              : weather == "Mist"
-              ? "HazeBg"
-              : weather == "Snow"
-              ? "snowBg"
-              : weather == "Thunderstorm"
-              ? "thenderStromeBg"
-              : weather == "Drizzle"
-              ? "cloudBg"
-              : "ClearBg"
-            : "weatherBg"
+          weather ? "windBg" : "ClearBg"
         } w-full h-screen bg-cover bg-center`}
       >
         <div className="flex flex-col sm:flex-row basis-full">
@@ -264,98 +242,6 @@ function App() {
                   </div>
                 </div>
               )}
-
-              {/* <div>
-                <h4 className="font-Roboto font-normal text-white text-[18px] pt-10">
-                  Today’s Weather Forecast...
-                </h4>
-                <div className="pt-14 flex flex-col gap-y-5">
-                  <div className="flex items-center justify-between">
-                    <img src={snow2} alt="" />
-                    <div>
-                      <h4 className="text-[18px] font-Roboto font-normal text-white">
-                        09:00
-                      </h4>
-                      <p className="text-[18px] font-Roboto font-normal text-[#ffffffaf]">
-                        Snow
-                      </p>
-                    </div>
-                    <p className="text-[24px] font-Roboto font-normal text-[#ffffffaf]">
-                      19°
-                    </p>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <img src={snow2} alt="" />
-                    <div>
-                      <h4 className="text-[18px] font-Roboto font-normal text-white">
-                        09:00
-                      </h4>
-                      <p className="text-[18px] font-Roboto font-normal text-[#ffffffaf]">
-                        Snow
-                      </p>
-                    </div>
-                    <p className="text-[24px] font-Roboto font-normal text-[#ffffffaf]">
-                      19°
-                    </p>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <img src={snow2} alt="" />
-                    <div>
-                      <h4 className="text-[18px] font-Roboto font-normal text-white">
-                        09:00
-                      </h4>
-                      <p className="text-[18px] font-Roboto font-normal text-[#ffffffaf]">
-                        Snow
-                      </p>
-                    </div>
-                    <p className="text-[24px] font-Roboto font-normal text-[#ffffffaf]">
-                      19°
-                    </p>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <img src={snow2} alt="" />
-                    <div>
-                      <h4 className="text-[18px] font-Roboto font-normal text-white">
-                        09:00
-                      </h4>
-                      <p className="text-[18px] font-Roboto font-normal text-[#ffffffaf]">
-                        Snow
-                      </p>
-                    </div>
-                    <p className="text-[24px] font-Roboto font-normal text-[#ffffffaf]">
-                      19°
-                    </p>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <img src={snow2} alt="" />
-                    <div>
-                      <h4 className="text-[18px] font-Roboto font-normal text-white">
-                        09:00
-                      </h4>
-                      <p className="text-[18px] font-Roboto font-normal text-[#ffffffaf]">
-                        Snow
-                      </p>
-                    </div>
-                    <p className="text-[24px] font-Roboto font-normal text-[#ffffffaf]">
-                      19°
-                    </p>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <img src={snow2} alt="" />
-                    <div>
-                      <h4 className="text-[18px] font-Roboto font-normal text-white">
-                        09:00
-                      </h4>
-                      <p className="text-[18px] font-Roboto font-normal text-[#ffffffaf]">
-                        Snow
-                      </p>
-                    </div>
-                    <p className="text-[24px] font-Roboto font-normal text-[#ffffffaf]">
-                      19°
-                    </p>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
