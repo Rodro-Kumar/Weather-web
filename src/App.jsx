@@ -68,7 +68,7 @@ function App() {
               ? "bg-[url('src/assets/stromBg.jpg')]"
               : weather == "Drizzle"
               ? "bg-[url('src/assets/cloudy.webp')]"
-              : "bg-[url('src/assets/clearBg.jpg')]"
+              : "ClearBg"
             : "bg-[url('src/assets/weather.jpg')]"
         } w-full h-screen bg-cover bg-center`}
       >

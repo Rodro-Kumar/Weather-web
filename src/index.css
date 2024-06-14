@@ -34,4 +34,8 @@
   img {
     @apply align-middle;
   }
+
+  .ClearBg {
+    background-image: url(/src/assets/clearBg.jpg);
+  }
 }
